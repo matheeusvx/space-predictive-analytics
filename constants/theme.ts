@@ -43,3 +43,5 @@ export const shadow = {
   shadowOffset: { width: 0, height: 10 },
   elevation: 8
 };
+
+export const themeVersion = '0.1.1';

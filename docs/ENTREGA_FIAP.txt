@@ -1,0 +1,9 @@
+=== GLOBAL SOLUTION 2026.1 ===
+Disciplina: Cross-Platform Application Development
+
+Integrante 1: Matheus Morelli | RM562765 |
+Integrante 2: Henrique Nicolas | RM564699 |
+Integrante 3: Lucas Eiki | RM561607 |
+
+GitHub: https://github.com/matheeusvx/space-predictive-analytics
+Video: https://link-do-video.com

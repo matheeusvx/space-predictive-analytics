@@ -8,10 +8,21 @@ import { MissionProfile } from '@/types/mission';
 type Props = {
   profile: MissionProfile;
   simulationEnabled: boolean;
+  riskScore: number;
+  activeAlertsCount: number;
   onToggleSimulation: () => void;
 };
 
-export function HeaderHero({ profile, simulationEnabled, onToggleSimulation }: Props) {
+export function HeaderHero({
+  profile,
+  simulationEnabled,
+  riskScore,
+  activeAlertsCount,
+  onToggleSimulation
+}: Props) {
+  const statusLabel = riskScore >= 76 ? 'Crítico' : riskScore >= 45 ? 'Atenção' : 'Nominal';
+  const statusIcon = riskScore >= 76 ? 'warning' : riskScore >= 45 ? 'alert-circle' : 'shield-checkmark';
+
   return (
     <View style={styles.hero}>
       <View style={styles.topRow}>

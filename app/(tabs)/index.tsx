@@ -18,8 +18,13 @@ export default function HomeScreen() {
 
   return (
     <Screen>
-      <HeaderHero profile={state.profile} simulationEnabled={state.simulationEnabled} onToggleSimulation={toggleSimulation} />
-
+      <HeaderHero
+        profile={state.profile}
+        simulationEnabled={state.simulationEnabled}
+        riskScore={riskScore}
+        activeAlertsCount={activeAlerts.length}
+        onToggleSimulation={toggleSimulation}
+/>
       <View style={styles.grid}>
         <MetricCard label="Energia" value={`${latest.energy.toFixed(0)}%`} helper="Banco de baterias" icon="battery-half" tone={latest.energy <= state.thresholds.energyMin ? 'red' : 'green'} />
         <MetricCard label="Sinal" value={`${latest.signal.toFixed(0)}%`} helper="Telemetria ativa" icon="radio" tone={latest.signal <= state.thresholds.signalMin ? 'red' : 'cyan'} />

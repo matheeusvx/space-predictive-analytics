@@ -134,5 +134,55 @@ const styles = StyleSheet.create({
   actionSecondaryText: {
     color: colors.cyan,
     fontWeight: '900'
+
+  },
+  statusRow: {
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  gap: spacing.sm
+},
+  statusPill: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 7,
+    borderWidth: 1,
+    borderRadius: 999,
+    paddingHorizontal: 12,
+    paddingVertical: 8
+},
+  statusNominal: {
+    backgroundColor: colors.greenSoft,
+    borderColor: colors.green
+},
+  statusWarning: {
+    backgroundColor: colors.yellowSoft,
+    borderColor: colors.yellow
+},
+  statusCritical: {
+    backgroundColor: colors.redSoft,
+    borderColor: colors.red
+},
+  statusText: {
+    color: colors.text,
+    fontSize: 12,
+    fontWeight: '900'
+},
+  alertPill: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 7,
+    borderWidth: 1,
+    borderColor: colors.border,
+    backgroundColor: colors.cyanSoft,
+    borderRadius: 999,
+    paddingHorizontal: 12,
+    paddingVertical: 8
+},
+alertPillText: {
+  color: colors.cyan,
+  fontSize: 12,
+  fontWeight: '900'
+}
+  
   }
-});
+);

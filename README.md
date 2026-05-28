@@ -160,7 +160,7 @@ Ou escaneie o QR Code com o Expo Go para rodar no dispositivo fisico.
 
 ## Video de Demonstracao
 
-[Clique aqui para assistir a demonstracao](https://link-do-video.com)
+[Clique aqui para assistir a demonstracao](https://youtu.be/Sp4CF4Ojjeg)
 
 ## Licenca
 
